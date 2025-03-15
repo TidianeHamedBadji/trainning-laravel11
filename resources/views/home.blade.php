@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel</title>
-    <script src="https//cdn.tailwindcss.com"></script>
-</head>
-<body>
-        <h1> Salam Aduma. Dal len Ak diam si <?php echo $name;?> </h1>
-        <h1> Salam Aduna {{ $name }}</h1>
-        <h1> 
-            @if($name == 'Laravel')
-                Salam Aduna
-            @else
-                Salam deuk bi 
-            @endif
-        </h1>
-</body>
-</html>
+@extends('layouts.base')
+
+
+@section('name', 'Tidiane')
+
+@section('content')
+
+<h1>About Use</h1>
+<!-- Home 
+<h1 class="text-4xl font-bold">Home</h1>
+<p class="mt-4 text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quod.</p>
+-->
+
+@endsection
